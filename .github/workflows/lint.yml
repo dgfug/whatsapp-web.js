@@ -6,6 +6,8 @@ on:
 
 jobs:
   eslint:
+    permissions:
+      contents: read
     name: ESLint
     runs-on: ubuntu-latest
     steps:
