@@ -12,6 +12,9 @@ yarn-debug.log*
 yarn-error.log*
 
 *session.json
+.wwebjs_auth/
+.wwebjs_cache/
+
 .env
 tools/
 tests/

@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <meta name="generator" content="JSDoc 3.6.7">
+  <meta name="generator" content="JSDoc 3.6.11">
   <meta charset="utf-8">
-  <title>whatsapp-web.js 1.15.4 &raquo; Class: Chat</title>
+  <title>whatsapp-web.js 1.26.1-alpha.3 &raquo; Class: Chat</title>
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Karla:400,400i,700,700i" type="text/css">
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Noto+Serif:400,400i,700,700i" type="text/css">
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Inconsolata:500" type="text/css">
@@ -15,7 +15,7 @@
   <nav id="jsdoc-navbar" role="navigation" class="jsdoc-navbar">
     <div id="jsdoc-navbar-container">
       <div id="jsdoc-navbar-content">
-        <a href="index.html" class="jsdoc-navbar-package-name">whatsapp-web.<wbr>js 1.<wbr>15.<wbr>4</a>
+        <a href="index.html" class="jsdoc-navbar-package-name">whatsapp-web.<wbr>js 1.<wbr>26.<wbr>1-alpha.<wbr>3</a>
       </div>
     </div>
   </nav>
@@ -58,19 +58,22 @@
                     <dt><a href="Chat.html#isReadOnly">isReadOnly</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Chat.html#lastMessage">lastMessage</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Chat.html#muteExpiration">muteExpiration</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Chat.html#name">name</a></dt>
                     <dd>
                     </dd>
-                    <dt><a href="Chat.html#pinned">pinned</a></dt>
-                    <dd>
-                    </dd>
                   </dl>
                 </div>
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
+                    <dt><a href="Chat.html#pinned">pinned</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Chat.html#timestamp">timestamp</a></dt>
                     <dd>
                     </dd>
@@ -87,6 +90,9 @@
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
                     <dt><a href="Chat.html#archive">archive()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Chat.html#changeLabels">changeLabels(labelIds)</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Chat.html#clearMessages">clearMessages()</a></dt>
@@ -126,14 +132,17 @@
                     <dt><a href="Chat.html#sendSeen">sendSeen()</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Chat.html#sendStateRecording">sendStateRecording()</a></dt>
+                    <dd>
+                    </dd>
                   </dl>
                 </div>
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
-                    <dt><a href="Chat.html#sendStateRecording">sendStateRecording()</a></dt>
+                    <dt><a href="Chat.html#sendStateTyping">sendStateTyping()</a></dt>
                     <dd>
                     </dd>
-                    <dt><a href="Chat.html#sendStateTyping">sendStateTyping()</a></dt>
+                    <dt><a href="Chat.html#syncHistory">syncHistory()</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Chat.html#unarchive">unarchive()</a></dt>
@@ -176,13 +185,18 @@
               <dl class="dl-compact">
               </dl>
               <h3 id="isMuted"><span class="symbol-name">isMuted</span><small class="property-type">
-                  &nbsp;number</small></h3>
+                  &nbsp;boolean</small></h3>
               <p>Indicates if the chat is muted or not</p>
               <dl class="dl-compact">
               </dl>
               <h3 id="isReadOnly"><span class="symbol-name">isReadOnly</span><small class="property-type">
                   &nbsp;boolean</small></h3>
               <p>Indicates if the Chat is readonly</p>
+              <dl class="dl-compact">
+              </dl>
+              <h3 id="lastMessage"><span class="symbol-name">lastMessage</span><small class="property-type">
+                  &nbsp;<a href="Message.html">Message</a></small></h3>
+              <p>Last message fo chat</p>
               <dl class="dl-compact">
               </dl>
               <h3 id="muteExpiration"><span class="symbol-name">muteExpiration</span><small class="property-type">
@@ -219,12 +233,50 @@
               <dl class="dl-compact">
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="changeLabels"><span class="symbol-name">changeLabels</span><span class="signature"><span class="signature-params">(labelIds)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing void</span></span></h3>
+              <p>Add or remove labels to this Chat</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>labelIds</p>
+                      </td>
+                      <td>
+                        <p>Array of (number or string)</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing void</code> </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
               <h3 id="clearMessages"><span class="symbol-name">clearMessages</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Boolean</span></span></h3>
               <p>Clears all messages from the chat</p>
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing Boolean</code> <p>result</p>
+                  <p><code>Promise containing Boolean</code> 
+                  <p>result</p>
                   </p>
                 </dd>
               </dl>
@@ -239,7 +291,8 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing Boolean</code> <p>result</p>
+                  <p><code>Promise containing Boolean</code> 
+                  <p>result</p>
                   </p>
                 </dd>
               </dl>
@@ -269,7 +322,7 @@
                         <p>&nbsp;</p>
                       </td>
                       <td>
-                        <p>Options for searching messages. Right now only limit is supported.</p>
+                        <p>Options for searching messages. Right now only limit and fromMe is supported.</p>
                         <p>Values in <code>searchOptions</code> have the following properties:</p>
                         <table class="jsdoc-details-table">
                           <thead>
@@ -292,8 +345,21 @@
                                 <p>Yes</p>
                               </td>
                               <td>
-                                <p>The amount of messages to return. Note that the actual number of returned messages may be smaller if there aren't enough messages in the conversation. Set this to Infinity to load all messages.</p>
-                                <p>Defaults to <code>50</code>.</p>
+                                <p>The amount of messages to return. If no limit is specified, the available messages will be returned. Note that the actual number of returned messages may be smaller if there aren't enough messages in the conversation. Set this to Infinity to load all messages.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>fromMe</p>
+                              </td>
+                              <td>
+                                <p>Boolean</p>
+                              </td>
+                              <td>
+                                <p>Yes</p>
+                              </td>
+                              <td>
+                                <p>Return only messages from the bot number or vise versa. To get all messages, leave the option undefined.</p>
                               </td>
                             </tr>
                           </tbody>
@@ -373,7 +439,8 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing boolean</code> <p>New pin state. Could be false if the max number of pinned chats was reached.</p>
+                  <p><code>Promise containing boolean</code> 
+                  <p>New pin state. Could be false if the max number of pinned chats was reached.</p>
                   </p>
                 </dd>
               </dl>
@@ -424,7 +491,8 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing <a href="Message.html">Message</a></code> <p>Message that was just sent</p>
+                  <p><code>Promise containing <a href="Message.html">Message</a></code> 
+                  <p>Message that was just sent</p>
                   </p>
                 </dd>
               </dl>
@@ -434,7 +502,8 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing Boolean</code> <p>result</p>
+                  <p><code>Promise containing Boolean</code> 
+                  <p>result</p>
                   </p>
                 </dd>
               </dl>
@@ -447,6 +516,17 @@
               <h3 id="sendStateTyping"><span class="symbol-name">sendStateTyping</span><span class="signature"><span class="signature-params">()</span></span></h3>
               <p>Simulate typing in chat. This will last for 25 seconds.</p>
               <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="syncHistory"><span class="symbol-name">syncHistory</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing boolean</span></span></h3>
+              <p>Sync chat history conversation</p>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing boolean</code> 
+                  <p>True if operation completed successfully, false otherwise.</p>
+                  </p>
+                </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
               <h3 id="unarchive"><span class="symbol-name">unarchive</span><span class="signature"><span class="signature-params">()</span></span></h3>
@@ -464,7 +544,8 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing boolean</code> <p>New pin state</p>
+                  <p><code>Promise containing boolean</code> 
+                  <p>New pin state</p>
                   </p>
                 </dd>
               </dl>
@@ -478,7 +559,7 @@
   <footer id="jsdoc-footer" class="jsdoc-footer">
     <div id="jsdoc-footer-container">
       <p>
-        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.7 on January 25, 2022.
+        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.11 on November 22, 2024.
       </p>
     </div>
   </footer>

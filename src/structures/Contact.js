@@ -156,9 +156,10 @@ class Contact extends Base {
 
         await this.client.pupPage.evaluate(async (contactId) => {
             const contact = window.Store.Contact.get(contactId);
-            await window.Store.BlockContact.blockContact(contact);
+            await window.Store.BlockContact.blockContact({contact});
         }, this.id._serialized);
 
+        this.isBlocked = true;
         return true;
     }
 
@@ -174,6 +175,7 @@ class Contact extends Base {
             await window.Store.BlockContact.unblockContact(contact);
         }, this.id._serialized);
 
+        this.isBlocked = false;
         return true;
     }
 
@@ -183,13 +185,22 @@ class Contact extends Base {
      */
     async getAbout() {
         const about = await this.client.pupPage.evaluate(async (contactId) => {
-            return window.Store.Wap.statusFind(contactId);
+            const wid = window.Store.WidFactory.createWid(contactId);
+            return window.Store.StatusUtils.getStatus(wid);
         }, this.id._serialized);
 
         if (typeof about.status !== 'string')
             return null;
 
         return about.status;
+    }
+
+    /**
+     * Gets the Contact's common groups with you. Returns empty array if you don't have any common group.
+     * @returns {Promise<WAWebJS.ChatId[]>}
+     */
+    async getCommonGroups() {
+        return await this.client.getCommonGroups(this.id._serialized);
     }
     
 }

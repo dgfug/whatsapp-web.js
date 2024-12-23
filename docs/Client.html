@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <meta name="generator" content="JSDoc 3.6.7">
+  <meta name="generator" content="JSDoc 3.6.11">
   <meta charset="utf-8">
-  <title>whatsapp-web.js 1.15.4 &raquo; Class: Client</title>
+  <title>whatsapp-web.js 1.26.1-alpha.3 &raquo; Class: Client</title>
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Karla:400,400i,700,700i" type="text/css">
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Noto+Serif:400,400i,700,700i" type="text/css">
   <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Inconsolata:500" type="text/css">
@@ -15,7 +15,7 @@
   <nav id="jsdoc-navbar" role="navigation" class="jsdoc-navbar">
     <div id="jsdoc-navbar-container">
       <div id="jsdoc-navbar-content">
-        <a href="index.html" class="jsdoc-navbar-package-name">whatsapp-web.<wbr>js 1.<wbr>15.<wbr>4</a>
+        <a href="index.html" class="jsdoc-navbar-package-name">whatsapp-web.<wbr>js 1.<wbr>26.<wbr>1-alpha.<wbr>3</a>
       </div>
     </div>
   </nav>
@@ -26,7 +26,7 @@
           <header class="page-header">
             <div class="symbol-detail-labels"><span class="label label-kind">class</span></div>
             <h1><small></small><span class="symbol-name">Client</span></h1>
-            <p class="source-link">Source: <a href="Client.js.html#source-line-53">Client.<wbr>js:53</a></p>
+            <p class="source-link">Source: <a href="Client.js.html#source-line-63">Client.<wbr>js:63</a></p>
             <div class="symbol-classdesc">
               <p>Starting point for interacting with the WhatsApp Web API</p>
             </div>
@@ -35,7 +35,7 @@
           </header>
           <section id="summary">
             <div class="summary-callout">
-              <h2 class="summary-callout-heading">Property</h2>
+              <h2 class="summary-callout-heading">Properties</h2>
               <div class="summary-content">
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
@@ -45,8 +45,18 @@
                   </dl>
                 </div>
                 <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="Client.html#pupBrowser">pupBrowser</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
                 </div>
                 <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="Client.html#pupPage">pupPage</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
@@ -55,22 +65,37 @@
               <div class="summary-content">
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
-                    <dt><a href="Client.html#acceptGroupV4Invite">acceptGroupV4Invite(inviteV4)</a></dt>
+                    <dt><a href="Client.html#acceptGroupV4Invite">acceptGroupV4Invite(inviteInfo)</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#acceptInvite">acceptInvite(inviteCode)</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Client.html#addOrRemoveLabels">addOrRemoveLabels(labelIds, chatIds)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#approveGroupMembershipRequests">approveGroupMembershipRequests(groupId, options)</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Client.html#archiveChat">archiveChat()</a></dt>
                     <dd>
                     </dd>
-                    <dt><a href="Client.html#createGroup">createGroup(name, participants)</a></dt>
+                    <dt><a href="Client.html#attachEventListeners">attachEventListeners()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#createGroup">createGroup(title, participants, options)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#deleteProfilePicture">deleteProfilePicture()</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#destroy">destroy()</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#getBlockedContacts">getBlockedContacts()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#getBroadcasts">getBroadcasts()</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#getChatById">getChatById(chatId)</a></dt>
@@ -85,20 +110,29 @@
                     <dt><a href="Client.html#getChatsByLabelId">getChatsByLabelId(labelId)</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Client.html#getCommonGroups">getCommonGroups(contactId)</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Client.html#getContactById">getContactById(contactId)</a></dt>
                     <dd>
                     </dd>
-                    <dt><a href="Client.html#getContacts">getContacts()</a></dt>
+                    <dt><a href="Client.html#getContactDeviceCount">getContactDeviceCount(userId)</a></dt>
                     <dd>
                     </dd>
-                    <dt><a href="Client.html#getCountryCode">getCountryCode(number)</a></dt>
+                    <dt><a href="Client.html#getContacts">getContacts()</a></dt>
                     <dd>
                     </dd>
                   </dl>
                 </div>
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
+                    <dt><a href="Client.html#getCountryCode">getCountryCode(number)</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Client.html#getFormattedNumber">getFormattedNumber(number)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#getGroupMembershipRequests">getGroupMembershipRequests(groupId)</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#getInviteInfo">getInviteInfo(inviteCode)</a></dt>
@@ -125,6 +159,9 @@
                     <dt><a href="Client.html#initialize">initialize()</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Client.html#inject">inject()</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Client.html#isRegisteredUser">isRegisteredUser(id)</a></dt>
                     <dd>
                     </dd>
@@ -137,13 +174,19 @@
                     <dt><a href="Client.html#muteChat">muteChat(chatId, unmuteDate)</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Client.html#pinChat">pinChat()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#rejectGroupMembershipRequests">rejectGroupMembershipRequests(groupId, options)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#requestPairingCode">requestPairingCode(phoneNumber, showNotification)</a></dt>
+                    <dd>
+                    </dd>
                   </dl>
                 </div>
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
-                    <dt><a href="Client.html#pinChat">pinChat()</a></dt>
-                    <dd>
-                    </dd>
                     <dt><a href="Client.html#resetState">resetState()</a></dt>
                     <dd>
                     </dd>
@@ -156,13 +199,34 @@
                     <dt><a href="Client.html#sendPresenceAvailable">sendPresenceAvailable()</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Client.html#sendPresenceUnavailable">sendPresenceUnavailable()</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Client.html#sendSeen">sendSeen(chatId)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#setAutoDownloadAudio">setAutoDownloadAudio(flag)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#setAutoDownloadDocuments">setAutoDownloadDocuments(flag)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#setAutoDownloadPhotos">setAutoDownloadPhotos(flag)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#setAutoDownloadVideos">setAutoDownloadVideos(flag)</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#setDisplayName">setDisplayName(displayName)</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Client.html#setProfilePicture">setProfilePicture(media)</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Client.html#setStatus">setStatus(status)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#syncHistory">syncHistory(chatId)</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#unarchiveChat">unarchiveChat()</a></dt>
@@ -195,17 +259,32 @@
                     <dt><a href="Client.html#event:change_state">change_state</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Client.html#event:chat_archived">chat_archived</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#event:chat_removed">chat_removed</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#event:contact_changed">contact_changed</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Client.html#event:disconnected">disconnected</a></dt>
                     <dd>
                     </dd>
-                    <dt><a href="Client.html#event:group_join">group_join</a></dt>
+                    <dt><a href="Client.html#event:group_admin_changed">group_admin_changed</a></dt>
                     <dd>
                     </dd>
                   </dl>
                 </div>
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
+                    <dt><a href="Client.html#event:group_join">group_join</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="Client.html#event:group_leave">group_leave</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#event:group_membership_request">group_membership_request</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#event:group_update">group_update</a></dt>
@@ -223,11 +302,20 @@
                     <dt><a href="Client.html#event:message_ack">message_ack</a></dt>
                     <dd>
                     </dd>
+                    <dt><a href="Client.html#event:message_ciphertext">message_ciphertext</a></dt>
+                    <dd>
+                    </dd>
                   </dl>
                 </div>
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
                     <dt><a href="Client.html#event:message_create">message_create</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#event:message_edit">message_edit</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#event:message_reaction">message_reaction</a></dt>
                     <dd>
                     </dd>
                     <dt><a href="Client.html#event:message_revoke_everyone">message_revoke_everyone</a></dt>
@@ -240,6 +328,9 @@
                     <dd>
                     </dd>
                     <dt><a href="Client.html#event:ready">ready</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Client.html#event:vote_update">vote_update</a></dt>
                     <dd>
                     </dd>
                   </dl>
@@ -286,6 +377,48 @@
                         <tbody>
                           <tr>
                             <td>
+                              <p>authStrategy</p>
+                            </td>
+                            <td>
+                              <p>&nbsp;</p>
+                            </td>
+                            <td>
+                              <p>&nbsp;</p>
+                            </td>
+                            <td>
+                              <p>Determines how to save and restore sessions. Will use LegacySessionAuth if options.session is set. Otherwise, NoAuth will be used.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>webVersion</p>
+                            </td>
+                            <td>
+                              <p>&nbsp;</p>
+                            </td>
+                            <td>
+                              <p>&nbsp;</p>
+                            </td>
+                            <td>
+                              <p>The version of WhatsApp Web to use. Use options.webVersionCache to configure how the version is retrieved.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>webVersionCache</p>
+                            </td>
+                            <td>
+                              <p>&nbsp;</p>
+                            </td>
+                            <td>
+                              <p>&nbsp;</p>
+                            </td>
+                            <td>
+                              <p>Determines how to retrieve the WhatsApp Web version. Defaults to a local cache (LocalWebCache) that falls back to latest if the requested version is not found.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
                               <p>authTimeoutMs</p>
                             </td>
                             <td>
@@ -314,34 +447,6 @@
                           </tr>
                           <tr>
                             <td>
-                              <p>qrRefreshIntervalMs</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                              <p>Refresh interval for qr code (how much time to wait before checking if the qr code has changed)</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p>qrTimeoutMs</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                              <p>Timeout for qr code selector in puppeteer</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
                               <p>qrMaxRetries</p>
                             </td>
                             <td>
@@ -365,7 +470,7 @@
                               <p>&nbsp;</p>
                             </td>
                             <td>
-                              <p>Restart client with a new session (i.e. use null 'session' var) if authentication fails</p>
+                              <p>@deprecated This option should be set directly on the LegacySessionAuth.</p>
                             </td>
                           </tr>
                           <tr>
@@ -379,59 +484,7 @@
                               <p>&nbsp;</p>
                             </td>
                             <td>
-                              <p>Whatsapp session to restore. If not set, will start a new session</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p>session.WABrowserId</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p>session.WASecretBundle</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p>session.WAToken1</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p>session.WAToken2</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
-                              <p>&nbsp;</p>
-                            </td>
-                            <td>
+                              <p>@deprecated Only here for backwards-compatibility. You should move to using LocalAuth, or set the authStrategy to LegacySessionAuth explicitly.</p>
                             </td>
                           </tr>
                           <tr>
@@ -487,7 +540,7 @@
                               <p>&nbsp;</p>
                             </td>
                             <td>
-                              <p>Ffmpeg path to use when formating videos to webp while sending stickers</p>
+                              <p>Ffmpeg path to use when formatting videos to webp while sending stickers</p>
                             </td>
                           </tr>
                           <tr>
@@ -502,6 +555,20 @@
                             </td>
                             <td>
                               <p>Sets bypassing of page's Content-Security-Policy.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p>proxyAuthentication</p>
+                            </td>
+                            <td>
+                              <p>&nbsp;</p>
+                            </td>
+                            <td>
+                              <p>&nbsp;</p>
+                            </td>
+                            <td>
+                              <p>Proxy Authentication object.</p>
                             </td>
                           </tr>
                         </tbody>
@@ -524,28 +591,41 @@
               <dd><a href="Client.html#event:message_create">Client#event:message_create</a></dd>
               <dd><a href="Client.html#event:message_revoke_me">Client#event:message_revoke_me</a></dd>
               <dd><a href="Client.html#event:message_revoke_everyone">Client#event:message_revoke_everyone</a></dd>
+              <dd><a href="Client.html#event:message_ciphertext">Client#event:message_ciphertext</a></dd>
+              <dd><a href="Client.html#event:message_edit">Client#event:message_edit</a></dd>
               <dd><a href="Client.html#event:media_uploaded">Client#event:media_uploaded</a></dd>
               <dd><a href="Client.html#event:group_join">Client#event:group_join</a></dd>
               <dd><a href="Client.html#event:group_leave">Client#event:group_leave</a></dd>
               <dd><a href="Client.html#event:group_update">Client#event:group_update</a></dd>
               <dd><a href="Client.html#event:disconnected">Client#event:disconnected</a></dd>
               <dd><a href="Client.html#event:change_state">Client#event:change_state</a></dd>
-              <dd><a href="Client.html#event:change_battery">Client#event:change_battery</a></dd>
+              <dd><a href="Client.html#event:contact_changed">Client#event:contact_changed</a></dd>
+              <dd><a href="Client.html#event:group_admin_changed">Client#event:group_admin_changed</a></dd>
+              <dd><a href="Client.html#event:group_membership_request">Client#event:group_membership_request</a></dd>
+              <dd><a href="Client.html#event:vote_update">Client#event:vote_update</a></dd>
             </dl>
           </section>
           <section>
-            <h2>Property</h2>
+            <h2>Properties</h2>
             <section>
               <h3 id="info"><span class="symbol-name">info</span><small class="property-type">
                   &nbsp;<a href="ClientInfo.html">ClientInfo</a></small></h3>
               <p>Current connection information</p>
               <dl class="dl-compact">
               </dl>
+              <h3 id="pupBrowser"><span class="symbol-name">pupBrowser</span><small class="property-type">
+                  &nbsp;puppeteer.Browser</small></h3>
+              <dl class="dl-compact">
+              </dl>
+              <h3 id="pupPage"><span class="symbol-name">pupPage</span><small class="property-type">
+                  &nbsp;puppeteer.Page</small></h3>
+              <dl class="dl-compact">
+              </dl>
             </section>
             <h2>Methods</h2>
             <section>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
-              <h3 id="acceptGroupV4Invite"><span class="symbol-name">acceptGroupV4Invite</span><span class="signature"><span class="signature-params">(inviteV4)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Object</span></span></h3>
+              <h3 id="acceptGroupV4Invite"><span class="symbol-name">acceptGroupV4Invite</span><span class="signature"><span class="signature-params">(inviteInfo)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Object</span></span></h3>
               <p>Accepts a private invitation to join a group</p>
               <section>
                 <h4>Parameter</h4>
@@ -561,7 +641,7 @@
                   <tbody>
                     <tr>
                       <td>
-                        <p>inviteV4</p>
+                        <p>inviteInfo</p>
                       </td>
                       <td>
                         <p>object</p>
@@ -617,22 +697,14 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing string</code> <p>Id of the joined Chat</p>
+                  <p><code>Promise containing string</code> 
+                  <p>Id of the joined Chat</p>
                   </p>
                 </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
-              <h3 id="archiveChat"><span class="symbol-name">archiveChat</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> boolean</span></span></h3>
-              <p>Enables and returns the archive state of the Chat</p>
-              <dl class="dl-compact">
-                <dt>Returns</dt>
-                <dd>
-                  <p><code>boolean</code> </p>
-                </dd>
-              </dl>
-              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
-              <h3 id="createGroup"><span class="symbol-name">createGroup</span><span class="signature"><span class="signature-params">(name, participants)</span>&nbsp;&rarr; <span class="signature-returns"> (Object, string, or Object with string properties)</span></span></h3>
-              <p>Create a new group</p>
+              <h3 id="addOrRemoveLabels"><span class="symbol-name">addOrRemoveLabels</span><span class="signature"><span class="signature-params">(labelIds, chatIds)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing void</span></span></h3>
+              <p>Change labels in chats</p>
               <section>
                 <h4>Parameters</h4>
                 <table class="jsdoc-details-table">
@@ -647,30 +719,28 @@
                   <tbody>
                     <tr>
                       <td>
-                        <p>name</p>
+                        <p>labelIds</p>
                       </td>
                       <td>
-                        <p>string</p>
+                        <p>Array of (number or string)</p>
                       </td>
                       <td>
                         <p>&nbsp;</p>
                       </td>
                       <td>
-                        <p>group title</p>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p>participants</p>
+                        <p>chatIds</p>
                       </td>
                       <td>
-                        <p>Array of (<a href="Contact.html">Contact</a> or string)</p>
+                        <p>Array of string</p>
                       </td>
                       <td>
                         <p>&nbsp;</p>
                       </td>
                       <td>
-                        <p>an array of Contacts or contact IDs to add to the group</p>
                       </td>
                     </tr>
                   </tbody>
@@ -679,15 +749,183 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Object</code> <p>createRes</p>
+                  <p><code>Promise containing void</code> </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="approveGroupMembershipRequests"><span class="symbol-name">approveGroupMembershipRequests</span><span class="signature"><span class="signature-params">(groupId, options)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Array of <a href="global.html#MembershipRequestActionResult">MembershipRequestActionResult</a></span></span></h3>
+              <p>Approves membership requests if any</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>groupId</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The group ID to get the membership request for</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>options</p>
+                      </td>
+                      <td>
+                        <p><a href="global.html#MembershipRequestActionOptions">MembershipRequestActionOptions</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>Options for performing a membership request action</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing Array of <a href="global.html#MembershipRequestActionResult">MembershipRequestActionResult</a></code> 
+                  <p>Returns an array of requester IDs whose membership requests were approved and an error for each requester, if any occurred during the operation. If there are no requests, an empty array will be returned</p>
                   </p>
                 </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="archiveChat"><span class="symbol-name">archiveChat</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> boolean</span></span></h3>
+              <p>Enables and returns the archive state of the Chat</p>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
                 <dd>
-                  <p><code>string</code> <p>createRes.gid - ID for the group that was just created</p>
+                  <p><code>boolean</code> </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="attachEventListeners"><span class="symbol-name">attachEventListeners</span><span class="signature"><span class="signature-params">()</span></span></h3>
+              <p>Attach event listeners to WA Web
+                Private function</p>
+              <section>
+                <h4>Property</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>reinject</p>
+                      </td>
+                      <td>
+                        <p>boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>is this a reinject?</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="createGroup"><span class="symbol-name">createGroup</span><span class="signature"><span class="signature-params">(title, participants, options)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing (<a href="global.html#CreateGroupResult">CreateGroupResult</a> or string)</span></span></h3>
+              <p>Creates a new group</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>title</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>Group title</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>participants</p>
+                      </td>
+                      <td>
+                        <p>(string, <a href="Contact.html">Contact</a>, Array of (<a href="Contact.html">Contact</a> or string), or undefined)</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>A single Contact object or an ID as a string or an array of Contact objects or contact IDs to add to the group</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>options</p>
+                      </td>
+                      <td>
+                        <p><a href="global.html#CreateGroupOptions">CreateGroupOptions</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>An object that handles options for group creation</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing (<a href="global.html#CreateGroupResult">CreateGroupResult</a> or string)</code> 
+                  <p>Object with resulting data or an error message as a string</p>
                   </p>
                 </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="deleteProfilePicture"><span class="symbol-name">deleteProfilePicture</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing boolean</span></span></h3>
+              <p>Deletes the current user's profile picture.</p>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
                 <dd>
-                  <p><code>Object with string properties</code> <p>createRes.missingParticipants - participants that were not added to the group. Keys represent the ID for participant that was not added and its value is a status code that represents the reason why participant could not be added. This is usually 403 if the user's privacy settings don't allow you to add them to groups.</p>
+                  <p><code>Promise containing boolean</code> 
+                  <p>Returns true if the picture was properly deleted.</p>
                   </p>
                 </dd>
               </dl>
@@ -703,6 +941,15 @@
                 <dt>Returns</dt>
                 <dd>
                   <p><code>Promise containing Array of <a href="Contact.html">Contact</a></code> </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="getBroadcasts"><span class="symbol-name">getBroadcasts</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Array of <a href="Broadcast.html">Broadcast</a></span></span></h3>
+              <p>Get all current Broadcast</p>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing Array of <a href="Broadcast.html">Broadcast</a></code> </p>
                 </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
@@ -826,6 +1073,44 @@
                 </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="getCommonGroups"><span class="symbol-name">getCommonGroups</span><span class="signature"><span class="signature-params">(contactId)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Array of WAWebJS.ChatId</span></span></h3>
+              <p>Gets the Contact's common groups with you. Returns empty array if you don't have any common group.</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>contactId</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the whatsapp user's ID (_serialized format)</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing Array of WAWebJS.ChatId</code> </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
               <h3 id="getContactById"><span class="symbol-name">getContactById</span><span class="signature"><span class="signature-params">(contactId)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing <a href="Contact.html">Contact</a></span></span></h3>
               <p>Get contact instance by ID</p>
               <section>
@@ -860,6 +1145,45 @@
                 <dt>Returns</dt>
                 <dd>
                   <p><code>Promise containing <a href="Contact.html">Contact</a></code> </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="getContactDeviceCount"><span class="symbol-name">getContactDeviceCount</span><span class="signature"><span class="signature-params">(userId)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing number</span></span></h3>
+              <p>Get user device count by ID
+                Each WaWeb Connection counts as one device, and the phone (if exists) counts as one
+                So for a non-enterprise user with one WaWeb connection it should return &quot;2&quot;</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>userId</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing number</code> </p>
                 </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
@@ -948,6 +1272,46 @@
                 </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="getGroupMembershipRequests"><span class="symbol-name">getGroupMembershipRequests</span><span class="signature"><span class="signature-params">(groupId)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Array of <a href="global.html#GroupMembershipRequest">GroupMembershipRequest</a></span></span></h3>
+              <p>Gets an array of membership requests</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>groupId</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The ID of a group to get membership requests for</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing Array of <a href="global.html#GroupMembershipRequest">GroupMembershipRequest</a></code> 
+                  <p>An array of membership requests</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
               <h3 id="getInviteInfo"><span class="symbol-name">getInviteInfo</span><span class="signature"><span class="signature-params">(inviteCode)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing object</span></span></h3>
               <p>Returns an object with information about the invite code's group</p>
               <section>
@@ -981,7 +1345,8 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing object</code> <p>Invite information</p>
+                  <p><code>Promise containing object</code> 
+                  <p>Invite information</p>
                   </p>
                 </dd>
               </dl>
@@ -1132,6 +1497,12 @@
               <dl class="dl-compact">
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="inject"><span class="symbol-name">inject</span><span class="signature"><span class="signature-params">()</span></span></h3>
+              <p>Injection logic
+                Private function</p>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
               <h3 id="isRegisteredUser"><span class="symbol-name">isRegisteredUser</span><span class="signature"><span class="signature-params">(id)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Boolean</span></span></h3>
               <p>Check if a given ID is registered in whatsapp</p>
               <section>
@@ -1263,8 +1634,120 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing boolean</code> <p>New pin state. Could be false if the max number of pinned chats was reached.</p>
+                  <p><code>Promise containing boolean</code> 
+                  <p>New pin state. Could be false if the max number of pinned chats was reached.</p>
                   </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="rejectGroupMembershipRequests"><span class="symbol-name">rejectGroupMembershipRequests</span><span class="signature"><span class="signature-params">(groupId, options)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Array of <a href="global.html#MembershipRequestActionResult">MembershipRequestActionResult</a></span></span></h3>
+              <p>Rejects membership requests if any</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>groupId</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The group ID to get the membership request for</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>options</p>
+                      </td>
+                      <td>
+                        <p><a href="global.html#MembershipRequestActionOptions">MembershipRequestActionOptions</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>Options for performing a membership request action</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing Array of <a href="global.html#MembershipRequestActionResult">MembershipRequestActionResult</a></code> 
+                  <p>Returns an array of requester IDs whose membership requests were rejected and an error for each requester, if any occurred during the operation. If there are no requests, an empty array will be returned</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="requestPairingCode"><span class="symbol-name">requestPairingCode</span><span class="signature"><span class="signature-params">(phoneNumber, showNotification)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing string</span></span></h3>
+              <p>Request authentication via pairing code instead of QR code</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>phoneNumber</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>Phone number in international, symbol-free format (e.g. 12025550108 for US, 551155501234 for Brazil)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>showNotification</p>
+                      </td>
+                      <td>
+                        <p>boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>Show notification to pair on phone number</p>
+                        <p>Defaults to <code>true</code>.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing string</code> 
+                  <ul>
+                    </p>
+                    <li>Returns a pairing code in format &quot;ABCDEFGH&quot;</li>
+                  </ul>
                 </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
@@ -1407,7 +1890,7 @@
                         <p>content</p>
                       </td>
                       <td>
-                        <p>(string, <a href="MessageMedia.html">MessageMedia</a>, <a href="Location.html">Location</a>, <a href="Contact.html">Contact</a>, Array of <a href="Contact.html">Contact</a>, <a href="Buttons.html">Buttons</a>, or <a href="List.html">List</a>)</p>
+                        <p>(string, <a href="MessageMedia.html">MessageMedia</a>, <a href="Location.html">Location</a>, <a href="Poll.html">Poll</a>, <a href="Contact.html">Contact</a>, Array of <a href="Contact.html">Contact</a>, <a href="Buttons.html">Buttons</a>, or <a href="List.html">List</a>)</p>
                       </td>
                       <td>
                         <p>&nbsp;</p>
@@ -1435,13 +1918,19 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing <a href="Message.html">Message</a></code> <p>Message that was just sent</p>
+                  <p><code>Promise containing <a href="Message.html">Message</a></code> 
+                  <p>Message that was just sent</p>
                   </p>
                 </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
               <h3 id="sendPresenceAvailable"><span class="symbol-name">sendPresenceAvailable</span><span class="signature"><span class="signature-params">()</span></span></h3>
               <p>Marks the client as online</p>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="sendPresenceUnavailable"><span class="symbol-name">sendPresenceUnavailable</span><span class="signature"><span class="signature-params">()</span></span></h3>
+              <p>Marks the client as unavailable</p>
               <dl class="dl-compact">
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
@@ -1478,12 +1967,149 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing boolean</code> <p>result</p>
+                  <p><code>Promise containing boolean</code> 
+                  <p>result</p>
                   </p>
                 </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
-              <h3 id="setDisplayName"><span class="symbol-name">setDisplayName</span><span class="signature"><span class="signature-params">(displayName)</span></span></h3>
+              <h3 id="setAutoDownloadAudio"><span class="symbol-name">setAutoDownloadAudio</span><span class="signature"><span class="signature-params">(flag)</span></span></h3>
+              <p>Setting autoload download audio</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>flag</p>
+                      </td>
+                      <td>
+                        <p>boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>true/false</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="setAutoDownloadDocuments"><span class="symbol-name">setAutoDownloadDocuments</span><span class="signature"><span class="signature-params">(flag)</span></span></h3>
+              <p>Setting autoload download documents</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>flag</p>
+                      </td>
+                      <td>
+                        <p>boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>true/false</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="setAutoDownloadPhotos"><span class="symbol-name">setAutoDownloadPhotos</span><span class="signature"><span class="signature-params">(flag)</span></span></h3>
+              <p>Setting autoload download photos</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>flag</p>
+                      </td>
+                      <td>
+                        <p>boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>true/false</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="setAutoDownloadVideos"><span class="symbol-name">setAutoDownloadVideos</span><span class="signature"><span class="signature-params">(flag)</span></span></h3>
+              <p>Setting autoload download videos</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>flag</p>
+                      </td>
+                      <td>
+                        <p>boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>true/false</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="setDisplayName"><span class="symbol-name">setDisplayName</span><span class="signature"><span class="signature-params">(displayName)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing Boolean</span></span></h3>
               <p>Sets the current user's display name.
                 This is the name shown to WhatsApp users that have not added you as a contact beside your number in groups and in your profile.</p>
               <section>
@@ -1516,6 +2142,49 @@
                 </table>
               </section>
               <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing Boolean</code> </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="setProfilePicture"><span class="symbol-name">setProfilePicture</span><span class="signature"><span class="signature-params">(media)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing boolean</span></span></h3>
+              <p>Sets the current user's profile picture.</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>media</p>
+                      </td>
+                      <td>
+                        <p><a href="MessageMedia.html">MessageMedia</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing boolean</code> 
+                  <p>Returns true if the picture was properly updated.</p>
+                  </p>
+                </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
               <h3 id="setStatus"><span class="symbol-name">setStatus</span><span class="signature"><span class="signature-params">(status)</span></span></h3>
@@ -1550,6 +2219,45 @@
                 </table>
               </section>
               <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
+              <h3 id="syncHistory"><span class="symbol-name">syncHistory</span><span class="signature"><span class="signature-params">(chatId)</span>&nbsp;&rarr; <span class="signature-returns"> Promise containing boolean</span></span></h3>
+              <p>Sync chat history conversation</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>chatId</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Promise containing boolean</code> 
+                  <p>True if operation completed successfully, false otherwise.</p>
+                  </p>
+                </dd>
               </dl>
               <div class="symbol-detail-labels"><span class="label label-async">async</span></div>
               <h3 id="unarchiveChat"><span class="symbol-name">unarchiveChat</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> boolean</span></span></h3>
@@ -1600,7 +2308,8 @@
               <dl class="dl-compact">
                 <dt>Returns</dt>
                 <dd>
-                  <p><code>Promise containing boolean</code> <p>New pin state</p>
+                  <p><code>Promise containing boolean</code> 
+                  <p>New pin state</p>
                   </p>
                 </dd>
               </dl>
@@ -1641,104 +2350,10 @@
               </dl>
               <h3 id="event:authenticated"><span class="symbol-name">authenticated</span></h3>
               <p>Emitted when authentication is successful</p>
-              <section>
-                <h4>Parameters</h4>
-                <table class="jsdoc-details-table">
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Type</th>
-                      <th>Optional</th>
-                      <th>Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <p>session</p>
-                      </td>
-                      <td>
-                        <p>object</p>
-                      </td>
-                      <td>
-                        <p>&nbsp;</p>
-                      </td>
-                      <td>
-                        <p>Object containing session information. Can be used to restore the session.</p>
-                        <p>Values in <code>session</code> have the following properties:</p>
-                        <table class="jsdoc-details-table">
-                          <thead>
-                            <tr>
-                              <th>Name</th>
-                              <th>Type</th>
-                              <th>Optional</th>
-                              <th>Description</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <p>WABrowserId</p>
-                              </td>
-                              <td>
-                                <p>string</p>
-                              </td>
-                              <td>
-                                <p>&nbsp;</p>
-                              </td>
-                              <td>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>WASecretBundle</p>
-                              </td>
-                              <td>
-                                <p>string</p>
-                              </td>
-                              <td>
-                                <p>&nbsp;</p>
-                              </td>
-                              <td>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>WAToken1</p>
-                              </td>
-                              <td>
-                                <p>string</p>
-                              </td>
-                              <td>
-                                <p>&nbsp;</p>
-                              </td>
-                              <td>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <p>WAToken2</p>
-                              </td>
-                              <td>
-                                <p>string</p>
-                              </td>
-                              <td>
-                                <p>&nbsp;</p>
-                              </td>
-                              <td>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </section>
               <dl class="dl-compact">
               </dl>
               <h3 id="event:change_battery"><span class="symbol-name">change_battery</span></h3>
-              <p>Emitted when the battery percentage for the attached device changes</p>
+              <p>Emitted when the battery percentage for the attached device changes. Will not be sent if using multi-device.</p>
               <section>
                 <h4>Parameters</h4>
                 <table class="jsdoc-details-table">
@@ -1809,6 +2424,8 @@
                 </table>
               </section>
               <dl class="dl-compact">
+                <dt>Deprecated</dt>
+                <dd></dd>
               </dl>
               <h3 id="event:change_state"><span class="symbol-name">change_state</span></h3>
               <p>Emitted when the connection state changes</p>
@@ -1843,6 +2460,172 @@
               </section>
               <dl class="dl-compact">
               </dl>
+              <h3 id="event:chat_archived"><span class="symbol-name">chat_archived</span></h3>
+              <p>Emitted when a chat is archived/unarchived</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>chat</p>
+                      </td>
+                      <td>
+                        <p><a href="Chat.html">Chat</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>currState</p>
+                      </td>
+                      <td>
+                        <p>boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>prevState</p>
+                      </td>
+                      <td>
+                        <p>boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <h3 id="event:chat_removed"><span class="symbol-name">chat_removed</span></h3>
+              <p>Emitted when a chat is removed</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>chat</p>
+                      </td>
+                      <td>
+                        <p><a href="Chat.html">Chat</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <h3 id="event:contact_changed"><span class="symbol-name">contact_changed</span></h3>
+              <p>Emitted when a contact or a group participant changes their phone number.</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>message</p>
+                      </td>
+                      <td>
+                        <p><a href="Message.html">Message</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>Message with more information about the event.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>oldId</p>
+                      </td>
+                      <td>
+                        <p>String</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The user's id (an old one) who changed their phone number
+                          and who triggered the notification.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>newId</p>
+                      </td>
+                      <td>
+                        <p>String</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The user's new id after the change.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>isContact</p>
+                      </td>
+                      <td>
+                        <p>Boolean</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>Indicates if a contact or a group participant changed their phone number.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
               <h3 id="event:disconnected"><span class="symbol-name">disconnected</span></h3>
               <p>Emitted when the client has been disconnected</p>
               <section>
@@ -1862,13 +2645,46 @@
                         <p>reason</p>
                       </td>
                       <td>
-                        <p>(<a href="global.html#WAState">WAState</a> or "NAVIGATION")</p>
+                        <p>(<a href="global.html#WAState">WAState</a> or "LOGOUT")</p>
                       </td>
                       <td>
                         <p>&nbsp;</p>
                       </td>
                       <td>
                         <p>reason that caused the disconnect</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <h3 id="event:group_admin_changed"><span class="symbol-name">group_admin_changed</span></h3>
+              <p>Emitted when a current user is promoted to an admin or demoted to a regular user.</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>notification</p>
+                      </td>
+                      <td>
+                        <p><a href="GroupNotification.html">GroupNotification</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>GroupNotification with more information about the action</p>
                       </td>
                     </tr>
                   </tbody>
@@ -1935,6 +2751,95 @@
                       </td>
                       <td>
                         <p>GroupNotification with more information about the action</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <h3 id="event:group_membership_request"><span class="symbol-name">group_membership_request</span></h3>
+              <p>Emitted when some user requested to join the group
+                that has the membership approval mode turned on</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>notification</p>
+                      </td>
+                      <td>
+                        <p><a href="GroupNotification.html">GroupNotification</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>GroupNotification with more information about the action</p>
+                        <p>Values in <code>notification</code> have the following properties:</p>
+                        <table class="jsdoc-details-table">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Type</th>
+                              <th>Optional</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <p>chatId</p>
+                              </td>
+                              <td>
+                                <p>string</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>The group ID the request was made for</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>author</p>
+                              </td>
+                              <td>
+                                <p>string</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>The user ID that made a request</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>timestamp</p>
+                              </td>
+                              <td>
+                                <p>number</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>The timestamp the request was made at</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
@@ -2245,6 +3150,38 @@
               </section>
               <dl class="dl-compact">
               </dl>
+              <h3 id="event:message_ciphertext"><span class="symbol-name">message_ciphertext</span></h3>
+              <p>Emitted when messages are edited</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>message</p>
+                      </td>
+                      <td>
+                        <p><a href="Message.html">Message</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
               <h3 id="event:message_create"><span class="symbol-name">message_create</span></h3>
               <p>Emitted when a new message is created, which may include the current user's own messages.</p>
               <section>
@@ -2271,6 +3208,237 @@
                       </td>
                       <td>
                         <p>The message that was created</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <h3 id="event:message_edit"><span class="symbol-name">message_edit</span></h3>
+              <p>Emitted when messages are edited</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>message</p>
+                      </td>
+                      <td>
+                        <p><a href="Message.html">Message</a></p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>newBody</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>prevBody</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <h3 id="event:message_reaction"><span class="symbol-name">message_reaction</span></h3>
+              <p>Emitted when a reaction is sent, received, updated or removed</p>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>reaction</p>
+                      </td>
+                      <td>
+                        <p>object</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>Values in <code>reaction</code> have the following properties:</p>
+                        <table class="jsdoc-details-table">
+                          <thead>
+                            <tr>
+                              <th>Name</th>
+                              <th>Type</th>
+                              <th>Optional</th>
+                              <th>Description</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <p>id</p>
+                              </td>
+                              <td>
+                                <p>object</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Reaction id</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>orphan</p>
+                              </td>
+                              <td>
+                                <p>number</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Orphan</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>orphanReason</p>
+                              </td>
+                              <td>
+                                <p>string</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Orphan reason</p>
+                                <p>Value can be null.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>timestamp</p>
+                              </td>
+                              <td>
+                                <p>number</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Timestamp</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>reaction</p>
+                              </td>
+                              <td>
+                                <p>string</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Reaction</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>read</p>
+                              </td>
+                              <td>
+                                <p>boolean</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Read</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>msgId</p>
+                              </td>
+                              <td>
+                                <p>object</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Parent message id</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>senderId</p>
+                              </td>
+                              <td>
+                                <p>string</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Sender id</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p>ack</p>
+                              </td>
+                              <td>
+                                <p>number</p>
+                              </td>
+                              <td>
+                                <p>&nbsp;</p>
+                              </td>
+                              <td>
+                                <p>Ack</p>
+                                <p>Value can be null.</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
@@ -2361,7 +3529,7 @@
               <dl class="dl-compact">
               </dl>
               <h3 id="event:qr"><span class="symbol-name">qr</span></h3>
-              <p>Emitted when the QR code is received</p>
+              <p>Emitted when a QR code is received</p>
               <section>
                 <h4>Parameter</h4>
                 <table class="jsdoc-details-table">
@@ -2397,6 +3565,11 @@
               <p>Emitted when the client has initialized and is ready to receive messages.</p>
               <dl class="dl-compact">
               </dl>
+              <h3 id="event:vote_update"><span class="symbol-name">vote_update</span></h3>
+              <p>Emitted when some poll option is selected or deselected,
+                shows a user's current selected option(s) on the poll</p>
+              <dl class="dl-compact">
+              </dl>
             </section>
           </section>
         </div>
@@ -2407,7 +3580,7 @@
   <footer id="jsdoc-footer" class="jsdoc-footer">
     <div id="jsdoc-footer-container">
       <p>
-        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.7 on January 25, 2022.
+        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.11 on November 22, 2024.
       </p>
     </div>
   </footer>
